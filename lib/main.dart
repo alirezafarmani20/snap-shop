@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snap_shop_app/views/splash/splash_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: Text("hello wordl")),
+      title: "snap shop",
+      home: SplashView(),
     );
   }
 }
