@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shop_app/core/theme.dart';
 
-class SplashView extends StatelessWidget {
+class SplashView extends StatefulWidget {
   const SplashView({super.key});
 
+  @override
+  _SplashViewState createState() => _SplashViewState();
+}
+
+class _SplashViewState extends State<SplashView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,8 +17,8 @@ class SplashView extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-             Image.asset("lib/assets/images/Logo.png"),
-            SizedBox(height: 12,),
+            Image.asset("lib/assets/images/Logo.png"),
+            SizedBox(height: 12),
             Text(
               "SnapShop",
               style: TextStyle(
